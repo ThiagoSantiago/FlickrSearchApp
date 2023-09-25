@@ -1,0 +1,12 @@
+strings:
+  inputs: FlickrSearch/SupportingFiles/en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: FlickrSearch/Resources/Generated/Strings.swift
+xcassets:
+  inputs:
+    - FlickrSearch/SupportingFiles/Images.xcassets
+    - FlickrSearch/SupportingFiles/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: FlickrSearch/Resources/Generated/Assets.swift
