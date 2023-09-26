@@ -45,7 +45,7 @@ struct FlickrSearchImageView: View {
         VStack {
             TextView(text: Strings.title,
                      font: .title,
-                     color: .titleText)
+                     color: .titleColor)
 
             SearchBar(
                 text: $searchText,
