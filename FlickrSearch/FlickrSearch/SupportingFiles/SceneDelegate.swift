@@ -1,15 +1,14 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         window = UIWindow(windowScene: windowScene)
-        self.setWindow(rootViewController: UINavigationController())
+        let coordinator = FlickrSearchImageCoordinator()
+        self.setWindow(rootViewController: coordinator.rootNavigationController)
     }
 
     func setWindow(rootViewController: UIViewController?) {

@@ -10,6 +10,12 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum FlickrAppCommonTexts {
+    /// Cancel
+    internal static let cancel = L10n.tr("Localizable", "FlickrAppCommonTexts.cancel", fallback: "Cancel")
+    /// Search...
+    internal static let search = L10n.tr("Localizable", "FlickrAppCommonTexts.search", fallback: "Search...")
+  }
   internal enum FlickrSearchApiError {
     /// Authentication is required
     internal static let authenticationRequired = L10n.tr("Localizable", "FlickrSearchApiError.authenticationRequired", fallback: "Authentication is required")
@@ -23,6 +29,16 @@ internal enum L10n {
     internal static let couldNotFindHost = L10n.tr("Localizable", "FlickrSearchApiError.couldNotFindHost", fallback: "The host was not found")
     /// Can't convert the data to the object entity
     internal static let couldNotParseObject = L10n.tr("Localizable", "FlickrSearchApiError.couldNotParseObject", fallback: "Can't convert the data to the object entity")
+  }
+  internal enum FlickrSearchImageView {
+    /// Flickr Search
+    internal static let title = L10n.tr("Localizable", "FlickrSearchImageView.title", fallback: "Flickr Search")
+    internal enum EmptyView {
+      /// How about looking for something interesting?
+      internal static let description = L10n.tr("Localizable", "FlickrSearchImageView.emptyView.description", fallback: "How about looking for something interesting?")
+      /// Nothing here
+      internal static let title = L10n.tr("Localizable", "FlickrSearchImageView.emptyView.title", fallback: "Nothing here")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

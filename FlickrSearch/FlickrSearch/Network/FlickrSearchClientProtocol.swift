@@ -4,6 +4,7 @@ enum HTTPMethod: String {
     case get = "GET"
 }
 
+// sourcery: AutoMockable
 protocol FlickrSearchClientProtocol {
     var endpoint: String { get }
     var method: HTTPMethod { get }
