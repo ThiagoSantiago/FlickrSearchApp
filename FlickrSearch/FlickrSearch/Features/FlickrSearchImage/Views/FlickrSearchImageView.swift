@@ -53,11 +53,11 @@ struct FlickrSearchImageView: View {
                     viewModel.searchCanceled()
                 })
             .padding()
-            .onChange(of: searchText) { oldValue, newValue in
+            .onChange(of: searchText, perform: { newValue in
                 Task {
                     await viewModel.searchImages(newValue)
                 }
-            }
+            })
         }
     }
 }
