@@ -1,6 +1,7 @@
 import SwiftUI
 
 final class FlickrDetailImageViewModel: ObservableObject {
+    typealias Strings = L10n.FlickrDetailImageView
     var imageItem: SearchedImageDomainModel
 
     init(imageItem: SearchedImageDomainModel) {
@@ -11,10 +12,10 @@ final class FlickrDetailImageViewModel: ObservableObject {
         let imageSize = imageItem.description.extractQueryParamsSize()
 
         return [
-            CardDetailsModel(key: "Title:", value: imageItem.title),
-            CardDetailsModel(key: "Author:", value: imageItem.author),
-            CardDetailsModel(key: "Width:", value: "\(imageSize.width)"),
-            CardDetailsModel(key: "Height:", value: "\(imageSize.height)")
+            CardDetailsModel(key: Strings.ImageDetails.title, value: imageItem.title),
+            CardDetailsModel(key: Strings.ImageDetails.author, value: imageItem.author),
+            CardDetailsModel(key: Strings.ImageDetails.width, value: "\(imageSize.width)"),
+            CardDetailsModel(key: Strings.ImageDetails.height, value: "\(imageSize.height)")
         ]
     }
 }

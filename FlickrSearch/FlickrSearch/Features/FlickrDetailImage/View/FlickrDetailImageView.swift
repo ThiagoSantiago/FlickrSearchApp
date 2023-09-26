@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct FlickrDetailImageView: View {
+    typealias Strings = L10n.FlickrDetailImageView
     @ObservedObject private var viewModel: FlickrDetailImageViewModel
 
     init(
@@ -12,7 +13,9 @@ struct FlickrDetailImageView: View {
     var body: some View {
         ScrollView {
             VStack {
+                let imageSize = viewModel.imageItem.description.extractQueryParamsSize()
                 ImageCardView(imageUrl: viewModel.imageItem.imageUrl)
+                    .frame(width: imageSize.width, height: imageSize.height)
                     .padding()
                 CardDetailsView(details: viewModel.getDetails())
                 tagsSection
@@ -22,7 +25,7 @@ struct FlickrDetailImageView: View {
 
     var tagsSection: some View {
         VStack {
-            TextView(text: "Tags:", 
+            TextView(text: Strings.ImageDetails.tags,
                      font: .titleBoldH3,
                      color: .titleColor)
             ScrollView(.horizontal, showsIndicators: false) {

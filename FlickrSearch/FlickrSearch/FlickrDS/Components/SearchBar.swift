@@ -10,7 +10,7 @@ struct SearchBar: View {
             TextField(Strings.search, text: $text)
                 .padding(8)
                 .padding(.horizontal, 24)
-                .background(Color.accentColor)
+                .background(Color(.systemGray4))
                 .cornerRadius(8)
                 .focused($isEditing)
                 .overlay {
