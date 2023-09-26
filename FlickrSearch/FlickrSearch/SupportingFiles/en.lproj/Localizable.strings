@@ -1,3 +1,8 @@
+// FlickrAppCommonTexts
+
+"FlickrAppCommonTexts.search" = "Search...";
+"FlickrAppCommonTexts.cancel" = "Cancel";
+
 // FlickrApiErrorMessages
 
 "FlickrSearchApiError.badUrl" = "Bad URL request";
@@ -6,3 +11,9 @@
 "FlickrSearchApiError.couldNotFindHost" = "The host was not found";
 "FlickrSearchApiError.badRequest" = "This is a bad request";
 "FlickrSearchApiError.couldNotParseObject" = "Can't convert the data to the object entity";
+
+// FlickrSearchImageView
+
+"FlickrSearchImageView.title" = "Flickr Search";
+"FlickrSearchImageView.emptyView.title" = "Nothing here";
+"FlickrSearchImageView.emptyView.description" = "How about looking for something interesting?";
