@@ -2,7 +2,7 @@ import SwiftUI
 
 // sourcery: AutoMockable
 protocol FlickrSearchImageNavigator {
-    func navigatToImageDetails()
+    func navigatToImageDetails(_ image: SearchedImageDomainModel)
 }
 
 @MainActor
@@ -43,5 +43,9 @@ final class FlickrSearchImageViewModel: ObservableObject {
 
     func searchCanceled() {
         searchedList = []
+    }
+
+    func goToImageDetails(_ image: SearchedImageDomainModel) {
+        navigator?.navigatToImageDetails(image)
     }
 }

@@ -24,10 +24,18 @@ struct FlickrSearchImageView: View {
                     } else {
                         ForEach(viewModel.searchedList, id: \.id) { item in
                             ImageCardView(imageUrl: item.imageUrl)
+                                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
+                                .onTapGesture {
+                                    viewModel.goToImageDetails(item)
+                                }
                         }
                     }
                 }
                 .padding()
+            }.overlay {
+                if viewModel.isLoading {
+                    ProgressView()
+                }
             }
         }
         .background(Color.appBackgroundColor)
