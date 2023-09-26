@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct FlickrDetailImageView: View {
+    typealias Strings = L10n.FlickrDetailImageView
     @ObservedObject private var viewModel: FlickrDetailImageViewModel
 
     init(
@@ -24,7 +25,7 @@ struct FlickrDetailImageView: View {
 
     var tagsSection: some View {
         VStack {
-            TextView(text: "Tags:", 
+            TextView(text: Strings.ImageDetails.tags,
                      font: .titleBoldH3,
                      color: .titleColor)
             ScrollView(.horizontal, showsIndicators: false) {

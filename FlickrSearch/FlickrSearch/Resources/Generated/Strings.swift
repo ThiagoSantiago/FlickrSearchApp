@@ -16,6 +16,20 @@ internal enum L10n {
     /// Search...
     internal static let search = L10n.tr("Localizable", "FlickrAppCommonTexts.search", fallback: "Search...")
   }
+  internal enum FlickrDetailImageView {
+    internal enum ImageDetails {
+      /// Author:
+      internal static let author = L10n.tr("Localizable", "FlickrDetailImageView.imageDetails.author", fallback: "Author:")
+      /// Height:
+      internal static let height = L10n.tr("Localizable", "FlickrDetailImageView.imageDetails.height", fallback: "Height:")
+      /// Tags:
+      internal static let tags = L10n.tr("Localizable", "FlickrDetailImageView.imageDetails.tags", fallback: "Tags:")
+      /// Title:
+      internal static let title = L10n.tr("Localizable", "FlickrDetailImageView.imageDetails.title", fallback: "Title:")
+      /// Width:
+      internal static let width = L10n.tr("Localizable", "FlickrDetailImageView.imageDetails.width", fallback: "Width:")
+    }
+  }
   internal enum FlickrSearchApiError {
     /// Authentication is required
     internal static let authenticationRequired = L10n.tr("Localizable", "FlickrSearchApiError.authenticationRequired", fallback: "Authentication is required")

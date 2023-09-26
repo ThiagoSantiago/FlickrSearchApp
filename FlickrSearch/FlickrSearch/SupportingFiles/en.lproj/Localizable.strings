@@ -17,3 +17,11 @@
 "FlickrSearchImageView.title" = "Flickr Search";
 "FlickrSearchImageView.emptyView.title" = "Nothing here";
 "FlickrSearchImageView.emptyView.description" = "How about looking for something interesting?";
+
+// FlickrDetailImageView
+
+"FlickrDetailImageView.imageDetails.title" = "Title:";
+"FlickrDetailImageView.imageDetails.author" = "Author:";
+"FlickrDetailImageView.imageDetails.width" = "Width:";
+"FlickrDetailImageView.imageDetails.height" = "Height:";
+"FlickrDetailImageView.imageDetails.tags" = "Tags:";
