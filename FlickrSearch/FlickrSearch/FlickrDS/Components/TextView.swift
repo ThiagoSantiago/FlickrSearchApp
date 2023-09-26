@@ -25,7 +25,3 @@ struct TextView: View {
         }
     }
 }
-
-#Preview {
-    TextView(text: "slkdfjlskfjddsjfklsjdflksjdflksjdfkljsdfkljsfdlsjdfklsjdfksljfdslkdfjslkfdjslkdfjsldkfjskldfjskldfjs", font: .title, color: .titleText)
-}

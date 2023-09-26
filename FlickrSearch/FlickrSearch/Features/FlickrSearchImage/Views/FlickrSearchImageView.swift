@@ -61,7 +61,3 @@ struct FlickrSearchImageView: View {
         }
     }
 }
-
-#Preview {
-    FlickrSearchImageView(viewModel: FlickrSearchImageViewModel(repository: FlickrSearchImageRepository(), navigator: nil))
-}

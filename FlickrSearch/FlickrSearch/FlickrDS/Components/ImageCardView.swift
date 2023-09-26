@@ -19,7 +19,3 @@ struct ImageCardView: View {
         .shadow(radius: 2)
     }
 }
-
-#Preview {
-    ImageCardView(imageUrl: "", placeholderImage: Asset.Images.imagePlaceholder.swiftUIImage)
-}

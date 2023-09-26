@@ -20,7 +20,3 @@ struct TagView: View {
             .clipShape(Capsule())
     }
 }
-
-#Preview {
-    TagView(title: "test")
-}

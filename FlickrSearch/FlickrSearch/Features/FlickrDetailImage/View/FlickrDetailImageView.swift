@@ -39,7 +39,3 @@ struct FlickrDetailImageView: View {
         }
     }
 }
-
-#Preview {
-    FlickrDetailImageView(viewModel: FlickrDetailImageViewModel(imageItem: SearchedImageDomainModel(title: "Test", imageUrl: "", dateTaken: "", description: "", published: "", author: "", tags: "")))
-}

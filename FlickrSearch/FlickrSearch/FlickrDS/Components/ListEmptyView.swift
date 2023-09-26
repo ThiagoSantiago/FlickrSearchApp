@@ -22,8 +22,3 @@ struct ListEmptyView: View {
         }
     }
 }
-
-#Preview {
-    ListEmptyView(title: "Nothing here",
-              description: "How about looking for something interesting?")
-}
