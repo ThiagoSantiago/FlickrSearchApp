@@ -12,7 +12,9 @@ struct FlickrDetailImageView: View {
     var body: some View {
         ScrollView {
             VStack {
+                let imageSize = viewModel.imageItem.description.extractQueryParamsSize()
                 ImageCardView(imageUrl: viewModel.imageItem.imageUrl)
+                    .frame(width: imageSize.width, height: imageSize.height)
                     .padding()
                 CardDetailsView(details: viewModel.getDetails())
                 tagsSection

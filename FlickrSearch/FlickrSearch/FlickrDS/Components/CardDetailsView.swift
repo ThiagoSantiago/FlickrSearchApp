@@ -17,7 +17,7 @@ struct CardDetailsView: View {
                         TextView(text: item.key,
                                  font: .regularBodyBold,
                                  color: .titleColor)
-
+                        Spacer()
                         TextView(text: item.value,
                                  font: .regularBody,
                                  color: .titleColor)
