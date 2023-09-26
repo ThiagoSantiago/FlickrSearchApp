@@ -25,7 +25,11 @@ final class FlickrSearchImageCoordinator {
 }
 
 extension FlickrSearchImageCoordinator: FlickrSearchImageNavigator {
-    func navigatToImageDetails() {
-        //TODO: navigate to image details
+    func navigatToImageDetails(_ image: SearchedImageDomainModel) {
+        let viewModel = FlickrDetailImageViewModel(imageItem: image)
+        let view = FlickrDetailImageView(viewModel: viewModel)
+        let hostingController = FlickrDetailImageHostingController(rootView: view)
+        self.rootNavigationController?.pushViewController(hostingController, animated: true)
+
     }
 }
